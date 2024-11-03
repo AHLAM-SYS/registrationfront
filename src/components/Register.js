@@ -17,7 +17,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/students', formData);
+            const response = await axios.post('https://registrationbackend-5rub.onrender.com/api/students', formData);
             alert(`Registration successful: ${response.data.name}`);
         } catch (error) {
             console.error(error);
